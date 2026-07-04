@@ -5,21 +5,21 @@
 class Lncli < Formula
   desc "LearnHub CLI — initialize and verify hands-on coding projects"
   homepage "https://github.com/adityasunny1189/lncli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4d2bd75dc600bcc339f4d518895c40538f499211949c19b722f6ee3de5192e3c"
+      url "https://github.com/adityasunny1189/lncli/releases/download/v0.2.0/lncli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "d9418d41a3ca738ec534c6b7b3fd6418cb6cd0fff1ddfbae3a6326a939d6d715"
 
       define_method(:install) do
         bin.install "lncli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "329ddfe02ac95e56a0ff5ca5f9fa2b3117c88ccfcca90a80a3c3cf3cc2baa770"
+      url "https://github.com/adityasunny1189/lncli/releases/download/v0.2.0/lncli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "26bd62b089ac1698027533587169d3a4a45dd0c32b18020642100ae59f14a09f"
 
       define_method(:install) do
         bin.install "lncli"
@@ -29,15 +29,15 @@ class Lncli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_linux_amd64.tar.gz"
-      sha256 "7095ef50aa6b50841b9767b669a1e4d543bb472a60cb49ae9ce549fb02fe5815"
+      url "https://github.com/adityasunny1189/lncli/releases/download/v0.2.0/lncli_0.2.0_linux_amd64.tar.gz"
+      sha256 "889689be56006ac90e267ade8f03f6adb6f4505a919c827276e50e23f7c39d80"
       define_method(:install) do
         bin.install "lncli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_linux_arm64.tar.gz"
-      sha256 "5bc17fdab0657074dd93173fc977a7c5b00a023502965688d3aafc6bd419e6bd"
+      url "https://github.com/adityasunny1189/lncli/releases/download/v0.2.0/lncli_0.2.0_linux_arm64.tar.gz"
+      sha256 "e52c8f48b78de91fe726836c12262068cd9382631f782337b1f0d616d693c08a"
       define_method(:install) do
         bin.install "lncli"
       end
