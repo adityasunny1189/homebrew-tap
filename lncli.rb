@@ -11,7 +11,7 @@ class Lncli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "7400ce59f7513a8be417926f08f7f97ae5d2ebafa3a71fa6117e9834698cd81e"
+      sha256 "4d2bd75dc600bcc339f4d518895c40538f499211949c19b722f6ee3de5192e3c"
 
       define_method(:install) do
         bin.install "lncli"
@@ -19,7 +19,7 @@ class Lncli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7dc9c306737912e0d210ad1d7ae5e58b6849594be13b1dea272fb4fd85b65cb7"
+      sha256 "329ddfe02ac95e56a0ff5ca5f9fa2b3117c88ccfcca90a80a3c3cf3cc2baa770"
 
       define_method(:install) do
         bin.install "lncli"
@@ -30,14 +30,14 @@ class Lncli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_linux_amd64.tar.gz"
-      sha256 "8f8d3ac384220a399868878354d9da41449e8380997259da98241179b7cf788b"
+      sha256 "7095ef50aa6b50841b9767b669a1e4d543bb472a60cb49ae9ce549fb02fe5815"
       define_method(:install) do
         bin.install "lncli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/adityasunny1189/lncli/releases/download/v0.1.0/lncli_0.1.0_linux_arm64.tar.gz"
-      sha256 "0225d3c035396751b6ce1fd5d2c669b00e184e356cf8e99e17f65d2d851fe81d"
+      sha256 "5bc17fdab0657074dd93173fc977a7c5b00a023502965688d3aafc6bd419e6bd"
       define_method(:install) do
         bin.install "lncli"
       end
